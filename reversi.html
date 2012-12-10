@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- Copyright (c) 2012 Ryan Rickard -->
+
+<html>
+  <head>
+    <meta charset = "utf-8"> 
+    <title>Reversi</title>
+    <link rel = "stylesheet" type = "text/css" href = "project.css">
+    <script src = reversi.js></script>
+  </head>
+
+  <body>
+    <center>
+    <p><b><span style= "font-size: 24pt">Ryan's Reversi</span></b></p>
+    <p id = score></p>
+    <table width = "400"><td>
+    
+      <script>
+        var i = 1
+        while (i <= 64){
+          if (i%8 == 1){
+            document.writeln("<div>");
+          }
+          document.writeln("<canvas id =" + i + " width = '46' height = '46'></canvas>");
+          if (i%8 == 0){
+            document.writeln("</div>");
+          }
+          i++;
+        } 
+      </script>
+    </td></table>
+    <p>Choose your color</p>
+    <p><input id = switchColorBlack name = "switchColor" type = "radio" value = "Black" checked = "checked"> Black
+    <input id = switchColorWhite name = "switchColor" type = "radio" value = "White"> White</p>
+    <p>
+    <input id = switchPVP type = checkbox value = PvP> Player vs Player
+    <input id = "reset" type = "button" value = "reset board">
+    <input id = switchCountFunction name = "switchCount" type = "checkbox" value = "Show Flip Counts" checked = "checked">Show Flip Counts</p>
+    </center>
+  </body>
+</html>
