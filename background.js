@@ -1,4 +1,10 @@
-/*Script for RLR19630project.html*/
+/** Copyright (c) 2012 Ryan Rickard */
+
+/** 
+This script causes balls to bounces around the screen and collide into eachother
+*/
+
+/*Script for project.html*/
 
 /*Global variables*/
 var canvas;
